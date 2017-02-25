@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "HXWRotateView.h"
 
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet HXWRotateView *rotateView;
 
 @end
 
@@ -16,9 +19,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [UIColor whiteColor];
+    
 }
 
+- (IBAction)addElement:(UIButton *)sender {
+    [self.rotateView addElement:nil];
+}
+
+- (IBAction)deleteElement:(UIButton *)sender {
+    [self.rotateView deleteElement:nil];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

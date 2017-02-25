@@ -13,6 +13,10 @@
 		49700BE91E61139B00F6B9EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49700BE71E61139B00F6B9EB /* Main.storyboard */; };
 		49700BEB1E61139B00F6B9EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49700BEA1E61139B00F6B9EB /* Assets.xcassets */; };
 		49700BEE1E61139B00F6B9EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49700BEC1E61139B00F6B9EB /* LaunchScreen.storyboard */; };
+		49700BF71E6113DE00F6B9EB /* HXWRotateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49700BF61E6113DE00F6B9EB /* HXWRotateView.m */; };
+		49700BFA1E61161700F6B9EB /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49700BF91E61161700F6B9EB /* Accelerate.framework */; };
+		49700BFF1E612C9100F6B9EB /* MatrixMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49700BFE1E612C9000F6B9EB /* MatrixMethod.swift */; };
+		49A77EE91E614B1D00A01C65 /* HXWRotateMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A77EE81E614B1D00A01C65 /* HXWRotateMethod.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,13 @@
 		49700BEA1E61139B00F6B9EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49700BED1E61139B00F6B9EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49700BEF1E61139B00F6B9EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49700BF51E6113DE00F6B9EB /* HXWRotateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXWRotateView.h; sourceTree = "<group>"; };
+		49700BF61E6113DE00F6B9EB /* HXWRotateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXWRotateView.m; sourceTree = "<group>"; };
+		49700BF91E61161700F6B9EB /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		49700BFB1E6122D700F6B9EB /* HXWRotate-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HXWRotate-Bridging-Header.h"; sourceTree = "<group>"; };
+		49700BFE1E612C9000F6B9EB /* MatrixMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixMethod.swift; sourceTree = "<group>"; };
+		49A77EE71E614B1D00A01C65 /* HXWRotateMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXWRotateMethod.h; sourceTree = "<group>"; };
+		49A77EE81E614B1D00A01C65 /* HXWRotateMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXWRotateMethod.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49700BFA1E61161700F6B9EB /* Accelerate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +56,7 @@
 			children = (
 				49700BDD1E61139B00F6B9EB /* HXWRotate */,
 				49700BDC1E61139B00F6B9EB /* Products */,
+				49700BF81E61161700F6B9EB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +71,7 @@
 		49700BDD1E61139B00F6B9EB /* HXWRotate */ = {
 			isa = PBXGroup;
 			children = (
+				49A77EEA1E6168FC00A01C65 /* RotateView */,
 				49700BE11E61139B00F6B9EB /* AppDelegate.h */,
 				49700BE21E61139B00F6B9EB /* AppDelegate.m */,
 				49700BE41E61139B00F6B9EB /* ViewController.h */,
@@ -67,6 +81,7 @@
 				49700BEC1E61139B00F6B9EB /* LaunchScreen.storyboard */,
 				49700BEF1E61139B00F6B9EB /* Info.plist */,
 				49700BDE1E61139B00F6B9EB /* Supporting Files */,
+				49700BFB1E6122D700F6B9EB /* HXWRotate-Bridging-Header.h */,
 			);
 			path = HXWRotate;
 			sourceTree = "<group>";
@@ -77,6 +92,26 @@
 				49700BDF1E61139B00F6B9EB /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		49700BF81E61161700F6B9EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49700BF91E61161700F6B9EB /* Accelerate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		49A77EEA1E6168FC00A01C65 /* RotateView */ = {
+			isa = PBXGroup;
+			children = (
+				49700BF51E6113DE00F6B9EB /* HXWRotateView.h */,
+				49700BF61E6113DE00F6B9EB /* HXWRotateView.m */,
+				49A77EE71E614B1D00A01C65 /* HXWRotateMethod.h */,
+				49A77EE81E614B1D00A01C65 /* HXWRotateMethod.m */,
+				49700BFE1E612C9000F6B9EB /* MatrixMethod.swift */,
+			);
+			name = RotateView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -111,6 +146,7 @@
 					49700BDA1E61139B00F6B9EB = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = HG825JC383;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -154,6 +190,9 @@
 				49700BE61E61139B00F6B9EB /* ViewController.m in Sources */,
 				49700BE31E61139B00F6B9EB /* AppDelegate.m in Sources */,
 				49700BE01E61139B00F6B9EB /* main.m in Sources */,
+				49A77EE91E614B1D00A01C65 /* HXWRotateMethod.m in Sources */,
+				49700BF71E6113DE00F6B9EB /* HXWRotateView.m in Sources */,
+				49700BFF1E612C9100F6B9EB /* MatrixMethod.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,11 +312,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = HG825JC383;
 				INFOPLIST_FILE = HXWRotate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangwang.HXWRotate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HXWRotate/HXWRotate-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -285,11 +330,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = HG825JC383;
 				INFOPLIST_FILE = HXWRotate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangwang.HXWRotate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HXWRotate/HXWRotate-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -312,6 +362,7 @@
 				49700BF41E61139B00F6B9EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
